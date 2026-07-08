@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicklaus Rosales — Portfolio</title>
+<meta name="description" content="Nicklaus Karl Vergel Rosales — BSIT student, full-stack developer. Web, systems, and IoT projects.">
+<link rel="stylesheet" href="style.css">
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!-- ============ DESKTOP SIDEBAR ============ -->
+<aside class="sidebar">
+  <a href="#home" class="sidebar__logo">Nicklaus Rosales</a>
+  <nav class="sidebar__nav" id="nav-links">
+    <a href="#home" class="sidebar__link active" data-section="home">home</a>
+    <a href="#about" class="sidebar__link" data-section="about">about</a>
+    <a href="#skills" class="sidebar__link" data-section="skills">skills</a>
+    <a href="#projects" class="sidebar__link" data-section="projects">projects</a>
+    <a href="#contact" class="sidebar__link" data-section="contact">contact</a>
+  </nav>
+  <div class="sidebar__foot">
+    <div class="theme-switch" role="group" aria-label="Theme">
+      <button class="theme-switch__btn" data-theme-choice="system" type="button" aria-label="System theme"><i class='bx bx-desktop'></i></button>
+      <button class="theme-switch__btn" data-theme-choice="light" type="button" aria-label="Light theme"><i class='bx bx-sun'></i></button>
+      <button class="theme-switch__btn" data-theme-choice="dark" type="button" aria-label="Dark theme"><i class='bx bx-moon'></i></button>
+    </div>
+    <div class="sidebar__contact">
+      <p class="sidebar__contact-text">For work, collabs &amp; everything else, reach me at</p>
+      <a href="mailto:nkvrosales@gmail.com" class="sidebar__contact-email"><i class='bx bx-envelope'></i> nkvrosales@gmail.com</a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ MOBILE TOPBAR ============ -->
+<header class="topbar">
+  <div class="topbar__logo">nicklaus<span>.dev</span></div>
+  <div class="topbar__actions">
+    <div class="theme-switch theme-switch--mobile" role="group" aria-label="Theme">
+      <button class="theme-switch__btn" data-theme-choice="system" type="button" aria-label="System theme"><i class='bx bx-desktop'></i></button>
+      <button class="theme-switch__btn" data-theme-choice="light" type="button" aria-label="Light theme"><i class='bx bx-sun'></i></button>
+      <button class="theme-switch__btn" data-theme-choice="dark" type="button" aria-label="Dark theme"><i class='bx bx-moon'></i></button>
+    </div>
+    <button class="topbar__menu-btn" id="menu-toggle" type="button" aria-label="Open menu">
+      <i class='bx bx-menu' id="menu-icon"></i>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home" class="mobile-menu__link" data-section="home">home</a>
+  <a href="#about" class="mobile-menu__link" data-section="about">about</a>
+  <a href="#skills" class="mobile-menu__link" data-section="skills">skills</a>
+  <a href="#projects" class="mobile-menu__link" data-section="projects">projects</a>
+  <a href="#contact" class="mobile-menu__link" data-section="contact">contact</a>
+  <div class="mobile-menu__socials">
+    <a href="https://github.com/nkvrosales" class="icon-box" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+    <a href="https://www.linkedin.com/in/nkvrosales/" class="icon-box" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+    <a href="mailto:nkvrosales@gmail.com" class="icon-box" aria-label="Email"><i class='bx bx-envelope'></i></a>
+  </div>
+</div>
+
+<!-- ============ CONTENT ============ -->
+<div class="content">
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="halftone hero__halftone"></div>
+    <h1 class="reveal">Nicklaus Rosales</h1>
+    <p class="hero__subtitle reveal">
+      BS Information Technology student at Mapúa Malayan Colleges Laguna, full-stack
+      web developer.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="mailto:nkvrosales@gmail.com" class="btn btn--primary"><i class='bx bx-envelope'></i> contact me</a>
+      <a href="cv.pdf" class="btn btn--ghost" download><i class='bx bx-download'></i> download cv</a>
+    </div>
+    <div class="hero__socials reveal">
+      <a href="https://github.com/nkvrosales" class="icon-box" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+      <a href="https://www.linkedin.com/in/nkvrosales/" class="icon-box" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head reveal"><span class="num">01</span><h2>about</h2></div>
+
+    <p class="about__text reveal">
+      Hello — I'm <strong>Nicklaus Karl Vergel C. Rosales</strong>, currently studying Information Technology
+      at Mapúa Malayan Colleges Laguna. Outside of coursework I'm usually deep in a build: a hospital
+      inventory system, a finance tracker, or something for fun. When I'm not at the keyboard, I'm gaming,
+      exploring new music, or getting lost in a good show.
+    </p>
+
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3 class="card__title">Summary</h3>
+        <div class="summary-list">
+          <div class="summary-item">
+            <span class="summary-label">Role</span>
+            <span class="summary-value">Aspiring Software Engineer</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Focus</span>
+            <span class="summary-value">Full-Stack Development, IoT Systems, API Integration</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Location</span>
+            <span class="summary-value">Laguna, Philippines</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="display:flex;flex-direction:column;gap:1.25rem;">
+        <div class="card">
+          <h3 class="card__title"><i class='bx bx-briefcase-alt-2'></i> Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-card-head">
+                <span class="timeline-title">On-the-Job Training</span>
+                <span class="timeline-date">2026</span>
+              </div>
+              <span class="timeline-sub">Biñan City Hall</span>
+              <p class="timeline-desc">
+                Hands-on experience in IT operations and system development — designing and building
+                an inventory management system for Biñan City Hospital, plus general tech support.
+              </p>
+              <div class="tag-row">
+                <span class="pill">IT Operations</span>
+                <span class="pill">Systems Admin</span>
+                <span class="pill">Tech Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title"><i class='bx bx-book-reader'></i> Education</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-card-head">
+                <span class="timeline-title">BS Information Technology</span>
+                <span class="timeline-date">Present</span>
+              </div>
+              <span class="timeline-sub">Mapúa Malayan Colleges Laguna</span>
+              <p class="timeline-desc">
+                Strong foundations in software engineering, object-oriented programming, data structures,
+                network security, and database administration. Active in web and hardware-software
+                integration projects.
+              </p>
+              <div class="tag-row">
+                <span class="pill">Software Engineering</span>
+                <span class="pill">Web Applications</span>
+                <span class="pill">Networking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head reveal"><span class="num">02</span><h2>skills</h2></div>
+
+    <div class="card skills-card reveal">
+      <div class="halftone skills-card__halftone"></div>
+      <div class="arsenal">
+        <div class="skill-group">
+          <span class="arsenal-group-label">Frontend</span>
+          <div class="skill-row">
+            <span class="skill-chip">JavaScript</span><span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">React</span><span class="skill-chip">HTML</span>
+            <span class="skill-chip">CSS</span><span class="skill-chip">Bootstrap</span>
+            <span class="skill-chip">Tailwind CSS</span><span class="skill-chip">jQuery</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="arsenal-group-label">Backend</span>
+          <div class="skill-row">
+            <span class="skill-chip">PHP</span><span class="skill-chip">CodeIgniter 4</span>
+            <span class="skill-chip">Python</span><span class="skill-chip">MySQL</span>
+            <span class="skill-chip">Supabase</span><span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">XAMPP</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="arsenal-group-label">Programming</span>
+          <div class="skill-row">
+            <span class="skill-chip">Python</span><span class="skill-chip">C#</span><span class="skill-chip">C++</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="arsenal-group-label">Tools &amp; Networking</span>
+          <div class="skill-row">
+            <span class="skill-chip">Git &amp; GitHub</span><span class="skill-chip">Cisco Networking</span>
+            <span class="skill-chip">CompTIA ITF+</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="arsenal-group-label">IoT &amp; Hardware</span>
+          <div class="skill-row">
+            <span class="skill-chip">Arduino</span><span class="skill-chip">ESP32</span><span class="skill-chip">IoT Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-head reveal"><span class="num">03</span><h2>projects</h2></div>
+
+    <div class="proj__filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="game">Games</button>
+      <button class="filter-btn" data-filter="iot">IoT / Systems</button>
+    </div>
+
+    <div class="proj__grid" id="proj-grid">
+
+      <div class="proj__card reveal" data-category="web" data-img="images/php.png" data-title="Spendwise" data-github="https://github.com/nkvrosales/Spendwise" data-web="http://spendwiseph.vercel.app/">
+        <div class="proj__img-wrap"><img src="images/php.png" alt="Spendwise" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Spendwise</h3>
+          <p class="proj__desc">Personal finance and expense tracking web app to manage budgets, track spending, and gain financial insights.</p>
+          <div class="proj__tags"><span class="pill">Next.js</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Supabase</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Spendwise" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+            <a href="http://spendwiseph.vercel.app/" target="_blank" class="proj__link"><i class='bx bx-link-external'></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="web" data-img="images/p5.png" data-title="Mediqueue" data-github="https://github.com/nkvrosales/Mediqueue" data-web="http://mediqueue.page.gd/">
+        <div class="proj__img-wrap"><img src="images/p5.png" alt="Mediqueue" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Mediqueue</h3>
+          <p class="proj__desc">Hospital ticketing and queue management system with role-based access, built with CodeIgniter 4 and Bootstrap.</p>
+          <div class="proj__tags"><span class="pill">PHP</span><span class="pill">CodeIgniter 4</span><span class="pill">MySQL</span><span class="pill">Bootstrap</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Mediqueue" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+            <a href="http://mediqueue.page.gd/" target="_blank" class="proj__link"><i class='bx bx-link-external'></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="web" data-img="images/p9.png" data-title="liwanag.ph" data-github="https://github.com/nkvrosales/Liwanagph" data-web="http://liwanagph.page.gd/">
+        <div class="proj__img-wrap"><img src="images/p9.png" alt="liwanag.ph" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">liwanag.ph</h3>
+          <p class="proj__desc">Electric billing management system (ElectroBill) with tiered billing logic, audit logging, and a dark modern UI.</p>
+          <div class="proj__tags"><span class="pill">HTML</span><span class="pill">PHP</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Liwanagph" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+            <a href="http://liwanagph.page.gd/" target="_blank" class="proj__link"><i class='bx bx-link-external'></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="web" data-img="images/p6.png" data-title="Larako" data-github="https://github.com/nkvrosales/larako" data-web="https://larako.netlify.app/">
+        <div class="proj__img-wrap"><img src="images/p6.png" alt="Larako" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Larako</h3>
+          <p class="proj__desc">A personal web application project deployed on Netlify, showcasing frontend design and interactivity.</p>
+          <div class="proj__tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/larako" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+            <a href="https://larako.netlify.app/" target="_blank" class="proj__link"><i class='bx bx-link-external'></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="web" data-img="images/p8.png" data-title="Notes" data-github="https://github.com/nkvrosales/Notes" data-web="https://noteslang.netlify.app/">
+        <div class="proj__img-wrap"><img src="images/p8.png" alt="Notes app" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Notes</h3>
+          <p class="proj__desc">A clean, minimal note-taking web app with persistent storage and a smooth user experience.</p>
+          <div class="proj__tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Notes" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+            <a href="https://noteslang.netlify.app/" target="_blank" class="proj__link"><i class='bx bx-link-external'></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="mobile" data-img="images/p3.png" data-title="Calisthenics App" data-github="https://github.com/nkvrosales/Calisthenics-Mobile-Application">
+        <div class="proj__img-wrap"><img src="images/p3.png" alt="Calisthenics mobile app" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Calisthenics App</h3>
+          <p class="proj__desc">A mobile fitness application guiding users through bodyweight exercise routines with structured workout plans.</p>
+          <div class="proj__tags"><span class="pill">Mobile</span><span class="pill">UI/UX</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Calisthenics-Mobile-Application" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="iot" data-img="images/p4.PNG" data-title="Smoke Detection System" data-github="https://github.com/nkvrosales/Smoke-Detection-System">
+        <div class="proj__img-wrap"><img src="images/p4.PNG" alt="Smoke detection system" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Smoke Detection System</h3>
+          <p class="proj__desc">An IoT-based smoke detection system with real-time alerts, hardware integration, and sensor monitoring.</p>
+          <div class="proj__tags"><span class="pill">IoT</span><span class="pill">Arduino</span><span class="pill">Sensors</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Smoke-Detection-System" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="game" data-img="images/p7.png" data-title="Snake Game" data-github="https://github.com/nkvrosales/snakegame" data-web="https://snakegameforlara.netlify.app/">
+        <div class="proj__img-wrap"><img src="images/p7.png" alt="Snake game" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Snake Game</h3>
+          <p class="proj__desc">A classic snake game built in vanilla JavaScript with smooth controls, score tracking, and a sleek interface.</p>
+          <div class="proj__tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/snakegame" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+            <a href="https://snakegameforlara.netlify.app/" target="_blank" class="proj__link"><i class='bx bx-link-external'></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="game" data-img="images/p1.png" data-title="Number Matching Game" data-github="https://github.com/nkvrosales/Number-Matching-Game">
+        <div class="proj__img-wrap"><img src="images/p1.png" alt="Number matching game" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Number Matching Game</h3>
+          <p class="proj__desc">A memory and logic browser game where players match number pairs under time pressure.</p>
+          <div class="proj__tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Number-Matching-Game" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj__card reveal" data-category="game" data-img="images/p2.png" data-title="Tic-Tac-Toe" data-github="https://github.com/nkvrosales/Tic-Tac-Toe">
+        <div class="proj__img-wrap"><img src="images/p2.png" alt="Tic-Tac-Toe" loading="lazy"><div class="proj__overlay"><span class="proj__overlay-text"><i class='bx bx-expand-alt'></i> View details</span></div></div>
+        <div class="proj__body">
+          <h3 class="proj__title">Tic-Tac-Toe</h3>
+          <p class="proj__desc">A two-player browser Tic-Tac-Toe game with win detection, turn switching, and a clean reset flow.</p>
+          <div class="proj__tags"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+          <div class="proj__links" onclick="event.stopPropagation()">
+            <a href="https://github.com/nkvrosales/Tic-Tac-Toe" target="_blank" class="proj__link"><i class='bx bxl-github'></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-head reveal"><span class="num">04</span><h2>contact</h2></div>
+    <p class="contact__desc reveal">Have a project in mind or just want to say hello? Feel free to reach out — I'm always open to discussing new opportunities.</p>
+
+    <div class="contact__grid">
+      <div class="contact__info reveal">
+        <a href="mailto:nkvrosales@gmail.com" class="contact__info-card">
+          <i class='bx bx-envelope contact__info-icon'></i>
+          <div><span class="contact__info-title">Email</span><span class="contact__info-value">nkvrosales@gmail.com</span></div>
+        </a>
+        <a href="https://github.com/nkvrosales" target="_blank" class="contact__info-card">
+          <i class='bx bxl-github contact__info-icon'></i>
+          <div><span class="contact__info-title">GitHub</span><span class="contact__info-value">github.com/nkvrosales</span></div>
+        </a>
+        <a href="https://www.linkedin.com/in/nkvrosales/" target="_blank" class="contact__info-card">
+          <i class='bx bxl-linkedin contact__info-icon'></i>
+          <div><span class="contact__info-title">LinkedIn</span><span class="contact__info-value">linkedin.com/in/nkvrosales</span></div>
+        </a>
+      </div>
+
+      <form id="contact-form" class="contact__form reveal">
+        <div class="form-group">
+          <label for="contact-name" class="form-label">Your name</label>
+          <input type="text" id="contact-name" name="name" class="form-input" placeholder="Juan Dela Cruz" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="contact-email" class="form-label">Email address</label>
+          <input type="email" id="contact-email" name="email" class="form-input" placeholder="juan@mail.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="contact-subject" class="form-label">Subject</label>
+          <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Project inquiry" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-message" class="form-label">Message</label>
+          <textarea id="contact-message" name="message" class="form-input" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn"><i class='bx bx-send'></i> Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">nicklaus<span style="color:rgb(var(--gray-400))">.dev</span></div>
+        <p class="footer__desc">Building practical digital solutions with clean code and modern design. Specializing in web, mobile, and IoT development.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Quick Links</div>
+        <div class="footer__links">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+          <a href="#projects">Projects</a><a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Connect</div>
+        <div class="footer__socials">
+          <a href="https://github.com/nkvrosales" target="_blank" class="icon-box" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/nkvrosales/" target="_blank" class="icon-box" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="mailto:nkvrosales@gmail.com" class="icon-box" aria-label="Email"><i class='bx bx-envelope'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Nicklaus Karl Vergel Rosales. All rights reserved.</div>
+  </footer>
+
+</main>
+</div>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="project-modal">
+  <div class="modal-panel">
+    <button class="modal__close" id="modal-close" aria-label="Close"><i class='bx bx-x'></i></button>
+    <div class="modal__img-wrap"><img id="modal-img" src="" alt="Project preview"></div>
+    <div class="modal__info">
+      <h3 id="modal-title">Project title</h3>
+      <div class="modal__actions">
+        <a id="modal-github" href="#" target="_blank" class="btn btn--primary"><i class='bx bxl-github'></i> View repo</a>
+        <a id="modal-web" href="#" target="_blank" class="btn btn--ghost"><i class='bx bx-link-external'></i> Visit site</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i class='bx bx-check-circle toast__icon' id="toast-icon"></i>
+  <div><span class="toast__title" id="toast-title">Message sent!</span><span class="toast__desc" id="toast-desc">Sending...</span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
