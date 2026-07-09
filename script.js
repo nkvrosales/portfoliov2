@@ -63,12 +63,14 @@ function closeMobileMenu() {
   mobileMenu.classList.remove('show');
   menuIcon.classList.remove('bx-x');
   menuIcon.classList.add('bx-menu');
+  document.body.classList.remove('no-scroll');
 }
 
 menuToggle?.addEventListener('click', () => {
   const isOpen = mobileMenu.classList.toggle('show');
   menuIcon.classList.toggle('bx-menu', !isOpen);
   menuIcon.classList.toggle('bx-x', isOpen);
+  document.body.classList.toggle('no-scroll', isOpen);
 });
 
 document.querySelectorAll('.mobile-menu__link').forEach(link => {
